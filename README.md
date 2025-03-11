@@ -3,7 +3,7 @@
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-Model-orange)](https://huggingface.co/ai4bharat/IndicF5)
 
 
-We release **IndicF5**, a **near-human polyglot** **Text-to-Speech (TTS)** model trained on **1417 hours** of high-quality speech from **Rasa, IndicTTS, LIMMITS, and IndicVoices-R**.  
+We release **IndicF5**, a **near-human polyglot** **Text-to-Speech (TTS)** model trained on **1417 hours** of high-quality speech from **[Rasa](https://huggingface.co/datasets/ai4bharat/Rasa), [IndicTTS](https://www.iitm.ac.in/donlab/indictts/database), [LIMMITS](https://sites.google.com/view/limmits24/), and [IndicVoices-R](https://huggingface.co/datasets/ai4bharat/indicvoices_r)**.  
 
 IndicF5 supports **11 Indian languages**:  
 **Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu.**  
@@ -50,4 +50,18 @@ sf.write("samples/namaste.wav", np.array(audio, dtype=np.float32), samplerate=24
 
 ## References
 
-1. https://github.com/SWivid/F5-TTS
+We would like to extend our gratitude to the authors of  **[F5-TTS](https://github.com/SWivid/F5-TTS)** for their invaluable contributions and inspiration to this work. Their efforts have played a crucial role in advancing  the field of text-to-speech synthesis.
+
+
+## 📖 Citation
+If you use **IndicF5** in your research or projects, please consider citing it:
+
+### 🔹 BibTeX
+```bibtex
+@misc{AI4Bharat_IndicF5_2025,
+  author       = {Praveen S V and Srija Anand and Soma Siddhartha and Mitesh M. Khapra},
+  title        = {IndicF5: High-Quality Text-to-Speech for Indian Languages},
+  year         = {2025},
+  url          = {https://github.com/AI4Bharat/IndicF5},
+}
+
