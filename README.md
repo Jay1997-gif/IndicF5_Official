@@ -14,7 +14,7 @@ IndicF5 supports **11 Indian languages**:
 ```bash
 conda create -n indicf5 python=3.10 -y
 conda activate indicf5
-pip install git+https://github.com/ai4bharat/indicf5.git
+pip install git+https://github.com/ai4bharat/IndicF5.git
 ```
 
 
