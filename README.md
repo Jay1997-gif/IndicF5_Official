@@ -19,6 +19,13 @@ pip install git+https://github.com/ai4bharat/IndicF5.git
 
 
 ## 🎙 Usage
+
+To generate speech, you need to provide **three inputs**:
+1. **Text to synthesize** – The content you want the model to speak.
+2. **A reference prompt audio** – An example speech clip that guides the model’s prosody and speaker characteristics.
+3. **Text spoken in the reference prompt audio** – The transcript of the reference prompt audio.
+
+
 ```python
 from transformers import AutoModel
 import numpy as np
