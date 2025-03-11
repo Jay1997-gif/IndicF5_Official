@@ -1,4 +1,4 @@
-# **IndicF5: A Multilingual TTS Fairyteller**
+# **IndicF5: High-Quality Text-to-Speech for Indian Languages**
 
 [![Hugging Face](https://img.shields.io/badge/HuggingFace-Model-orange)](https://huggingface.co/ai4bharat/IndicF5)
 
