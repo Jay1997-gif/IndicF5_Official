@@ -12,7 +12,6 @@ setup(
     packages=find_packages(include=["f5_tts", "f5_tts.*"]),
     install_requires=[
         "accelerate>=0.33.0",
-        "bitsandbytes>0.37.0; platform_machine != 'arm64' and platform_system != 'Darwin'",
         "cached_path",
         "click",
         "datasets",
