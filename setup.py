@@ -17,7 +17,6 @@ setup(
         "click",
         "datasets",
         "ema_pytorch>=0.5.2",
-        "gradio>=3.45.2",
         "hydra-core>=1.3.0",
         "jieba",
         "librosa",
