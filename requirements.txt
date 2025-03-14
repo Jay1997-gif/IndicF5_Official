@@ -23,4 +23,4 @@ transformers_stream_generator
 vocos
 wandb
 x_transformers>=1.31.14
-git+https://github.com/svp19/INF5.git
+
