@@ -1,4 +1,4 @@
-from .number_normalizer import normalize_numbers
+from .normalizers.number import normalize_numbers
 from .date_normalizer import normalize_dates
 from .time_normalizer import normalize_time
 from .percentage_normalizer import normalize_percentage
