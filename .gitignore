@@ -172,3 +172,35 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ===== IndicF5 =====
+
+# Generated audio
+*.wav
+*.mp3
+
+# Generated outputs
+runs/indic_5/infers/
+
+# Hugging Face cache
+.cache/
+huggingface/
+
+# AI model files
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
