@@ -1,4 +1,5 @@
 from .normalizers.number import normalize_numbers
+from .normalizers.phone import normalize_phone
 from .date_normalizer import normalize_dates
 from .time_normalizer import normalize_time
 from .percentage_normalizer import normalize_percentage
@@ -22,6 +23,8 @@ def preprocess(text):
     text = normalize_currency(text)
 
     text = normalize_units(text)
+
+    text = normalize_phone(text)
 
     text = normalize_numbers(text)
 
