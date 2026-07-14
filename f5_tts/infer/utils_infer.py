@@ -349,6 +349,19 @@ def preprocess_ref_audio_text(ref_audio_orig, ref_text, clip_short=True, show_in
 
     return ref_audio, ref_text
 
+import re
+
+
+def preprocess_gen_text(text):
+    """
+    Basic normalization before TTS.
+    Number conversion is handled by normalize_tamil_text().
+    """
+
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
+
 
 # infer process: chunk text -> infer batches [i.e. infer_batch_process()]
 
