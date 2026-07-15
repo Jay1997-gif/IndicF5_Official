@@ -1,79 +1,16 @@
 import re
 
-ENGLISH_MAP = {
+from .dictionaries.english_words import WORDS
+from .dictionaries.brands import BRANDS
+from .dictionaries.acronyms import ACRONYMS
 
-    # Pronouns
-    "i": "ஐ",
-    "me": "மீ",
-    "my": "மை",
-    "mine": "மைன்",
-    "you": "யூ",
-    "your": "யுவர்",
-    "he": "ஹீ",
-    "she": "ஷீ",
-    "we": "வீ",
-    "they": "தே",
+ENGLISH_MAP = {}
 
-    # Common verbs
-    "am": "ஆம்",
-    "is": "இஸ்",
-    "are": "ஆர்",
-    "was": "வாஸ்",
-    "were": "வேர்",
-    "have": "ஹேவ்",
-    "has": "ஹாஸ்",
-    "had": "ஹேட்",
-    "do": "டூ",
-    "does": "டஸ்",
-    "did": "டிட்",
-    "go": "கோ",
-    "come": "கம்",
-    "say": "சே",
-    "see": "ஸீ",
-    "know": "நோ",
-    "make": "மேக்",
-    "take": "டேக்",
+ENGLISH_MAP.update(WORDS)
+ENGLISH_MAP.update(BRANDS)
 
-    # Time
-    "today": "டுடே",
-    "tomorrow": "டுமாரோ",
-    "yesterday": "யெஸ்டர்டே",
-    "morning": "மார்னிங்",
-    "evening": "ஈவினிங்",
-    "night": "நைட்",
-
-    # Common words
-    "hello": "ஹலோ",
-    "hi": "ஹாய்",
-    "thanks": "தேங்க்ஸ்",
-    "thank": "தேங்க்",
-    "please": "ப்ளீஸ்",
-    "good": "குட்",
-    "bad": "பேட்",
-    "yes": "யெஸ்",
-    "no": "நோ",
-
-    # Money
-    "rupees": "ரூபாய்",
-    "rupee": "ரூபாய்",
-    "dollar": "டாலர்",
-    "dollars": "டாலர்",
-
-    # Age
-    "year": "யேர்",
-    "years": "யேர்ஸ்",
-    "old": "ஓல்ட்",
-
-    # Tech
-    "google": "கூகுள்",
-    "youtube": "யூடியூப்",
-    "chatgpt": "சாட் ஜிபிடி",
-    "openai": "ஓபன் ஏ ஐ",
-    "microsoft": "மைக்ரோசாஃப்ட்",
-    "windows": "விண்டோஸ்",
-
-}
-
+for k, v in ACRONYMS.items():
+    ENGLISH_MAP[k.lower()] = v
 VOWELS = {
     "a": "அ",
     "e": "எ",

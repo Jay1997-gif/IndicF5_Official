@@ -5,6 +5,7 @@ from .normalizers.url import normalize_url
 from .email_normalizer import normalize_email
 from .currency_normalizer import normalize_currency
 from .unit_normalizer import normalize_units
+from .normalizers.otp import normalize_otp
 from .normalizers.phone import normalize_phone
 from .normalizers.number import normalize_numbers
 from .english_normalizer import normalize_english
@@ -19,6 +20,7 @@ PIPELINE = [
     normalize_email,
     normalize_currency,
     normalize_units,
+    normalize_otp,
     normalize_phone,
     normalize_numbers,
     normalize_english,
