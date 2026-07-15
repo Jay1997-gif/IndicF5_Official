@@ -1,0 +1,16 @@
+BRANDS = {
+    "google": "கூகுள்",
+    "youtube": "யூடியூப்",
+    "github": "கிட்ட்ஹப்",
+    "chatgpt": "சாட்ஜிபிடி",
+    "openai": "ஓபன் ஏஐ",
+    "whatsapp": "வாட்ஸ்அப்",
+    "instagram": "இன்ஸ்டாகிராம்",
+    "facebook": "பேஸ்புக்",
+    "microsoft": "மைக்ரோசாஃப்ட்",
+    "windows": "விண்டோஸ்",
+    "linux": "லினக்ஸ்",
+    "android": "ஆண்ட்ராய்டு",
+    "iphone": "ஐபோன்",
+    "nvidia": "என்விடியா",
+}
