@@ -1,3 +1,4 @@
+from .text_cleaner import clean_text
 from .date_normalizer import normalize_dates
 from .time_normalizer import normalize_time
 from .percentage_normalizer import normalize_percentage
@@ -11,8 +12,10 @@ from .normalizers.number import normalize_numbers
 from .english_normalizer import normalize_english
 from .punctuation_normalizer import normalize_punctuation
 from .emotion_normalizer import normalize_emotion
+from .sentence_splitter import split_sentences
 
 PIPELINE = [
+    clean_text,
     normalize_dates,
     normalize_time,
     normalize_percentage,
@@ -32,3 +35,13 @@ def run_pipeline(text):
     for step in PIPELINE:
         text = step(text)
     return text
+
+
+def preprocess_document(text):
+
+    sentences = split_sentences(text)
+
+    return [
+        run_pipeline(sentence)
+        for sentence in sentences
+    ]
