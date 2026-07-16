@@ -1,6 +1,6 @@
 from .sentence_splitter import split_sentences
 from .tokenizer import tokenize
-from .token_router import route
+from .context_processor import process_token
 from .rebuilder import rebuild
 
 
@@ -17,7 +17,7 @@ def process_document(text):
         processed = []
 
         for token in tokens:
-            processed.append(route(token))
+            processed.append(process_token(token))
 
         final.append(rebuild(processed))
 

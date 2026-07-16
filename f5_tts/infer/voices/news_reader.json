@@ -1,0 +1,13 @@
+{
+    "name": "News Reader",
+
+    "pitch": 0.95,
+
+    "speed": 0.95,
+
+    "energy": 1.1,
+
+    "pause": 1.2,
+
+    "emotion_scale": 0.5
+}
